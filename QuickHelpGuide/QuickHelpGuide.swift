@@ -7,21 +7,23 @@
 
 import UIKit
 
-// MARK: 1. 퀵 헬프 주석
+// MARK: 퀵 헬프 가이드
 class QuickHelpGuide {
+//
+//    /// 한줄 주석
+//    var oneLine = 0
     
-    /// 한줄 주석
-    var oneLine = 0
-    
+    // MARK: - 1. 단축키
     /// Quick Help 단축키는 command + option + /  입니다.
     /// - Parameters:
     ///   - name: String형 입니다.
     ///   - index: 값의 위치를 나타냅니다.
     /// - Returns: true 혹은 false를 리턴합니다.
-    func quickHelp1(name: String, index: Int) throws -> Bool {
+    func quickHelp(name: String, index: Int) throws -> Bool {
         return true
     }
     
+    // MARK: - 2. 마크업 문법
    /**
     첫 번째 줄은 Summary 부분 입니다.
     
@@ -64,11 +66,10 @@ class QuickHelpGuide {
     
     기본 마크업 문법에 대해서 알아 봤습니다.
     */
-    func quickHelp2(name: String, index: Int) throws -> Bool {
-        
-        return true
+    func quickHelp() {
     }
     
+    // MARK: - 3. Callout 표현 방법
     /**
      기능 설명선(Callout)의 종류
      
@@ -82,7 +83,7 @@ class QuickHelpGuide {
      
      - Throws: 에러가 발생할 가능성이 존재합니다.
      
-     - Warning: 무단으로 글을 사용 시 문제가 될 수 있습니다.
+     - Warning: 무단으로 글 사용시 문제가 될 수 있습니다.
      
      - Note: 문서화의 중요성
      
@@ -90,10 +91,16 @@ class QuickHelpGuide {
      - Date: Feb 10, 2023
      - Since: First available in Mac OS 10
      */
-    func quickHelp(name: String, index: Int) throws -> Bool {
+    func quickHelp2(name: String, index: Int) throws -> Bool {
         
         return true
     }
     
+    // TODO: - 해야 할 작업
+    func pushGitHub() {
+    }
+    
+    // FIXME: - 고쳐야 할 작업
+    func mySelf() {
+    }
 }
-
